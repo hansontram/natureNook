@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Parks Search</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,20 +20,41 @@
     <script src="scripts/parkTypeData.js"></script>
     <script src="scripts/nationalParks.js"></script>
     <script src="scripts/mountains.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>🏕️ Nature Nook</h1>
+      <h1>🏕️ Nature Nook</h1>
+      <div>
+        <a href="./index.html">Home</a>
+        <a href="./parksSearch.html">National Parks</a>
+        <a href="./mountains.html">Mountains</a>
+      </div>
+    </header>
+    <main>
+      <h3>National Parks Search</h3>
+      <div class="filter-box">
         <div>
-  
-          <a href="./index.html">National Parks</a>
-          <a href="./parksSearch.html">National Parks</a>
-          <a href="./mountains.html">Mountains</a>
+          <select name="locationFilter" id="locationList" class="">
+            <option>Select A State</option>
+          </select>
+          <!-- <label for="category-select">Category</label> -->
         </div>
-      </header>
-      <main>
-        <h3>National Parks Search</h3>
-        
-      </main>
-</body>
+
+        <!-- <div>
+              <select name="" id="breed-select" class="form-select">
+                  <option>Show All</option>
+                  <option>Corgi</option>
+                  <option>Mixed Breed</option>
+                  <option>Golden Retriever</option>
+                  <option>Beagle</option>
+                  <option>Mixed</option>
+                  <option>American Shorthair</option>
+                  <option>Tabby</option>
+                  
+              </select>
+              <label for="breed-select">Color</label>
+          </div> -->
+      </div>
+    </main>
+  </body>
 </html>
