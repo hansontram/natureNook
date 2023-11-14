@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   populateLocations();
-  populateParkTypes()
+  populateParkTypes();
 
-//   displayAllParks(nationalParksArray);
+  let locationSelect = document.getElementById("locationList");
+  locationSelect.addEventListener("change", filterParksByLocationAndType);
 
-  let locationSelect = document.getElementById("locationList")
-  locationSelect.addEventListener("change", filterParksByLocationAndType)
-
-  let parkTypeSelect = document.getElementById("parkTypeList")
-  parkTypeSelect.addEventListener("change", filterParksByLocationAndType)
+  let parkTypeSelect = document.getElementById("parkTypeList");
+  parkTypeSelect.addEventListener("change", filterParksByLocationAndType);
 });
 
 const populateLocations = () => {
@@ -31,21 +29,24 @@ const populateParkTypes = () => {
   }
 };
 
-
 const filterParksByLocationAndType = () => {
-    let locationSelect = document.getElementById("locationList").value;
-    let typeSelected = document.getElementById("parkTypeList").value;
-  
-    let filteredParks = nationalParksArray;
-  
-    if (locationSelect !== "Show All" && locationSelect !== "Select A State") {
-      filteredParks = filteredParks.filter(park => park.State == locationSelect);
-    }
-  
-    if (typeSelected !== "Show All" && typeSelected !== "Select A Type") {
-      filteredParks = filteredParks.filter(park => park.LocationName.includes(typeSelected));
-    }
-  
+  let locationSelect = document.getElementById("locationList").value;
+  let typeSelected = document.getElementById("parkTypeList").value;
+
+  let filteredParks = nationalParksArray;
+
+  if (locationSelect !== "Show All" && locationSelect !== "Select A State") {
+    filteredParks = filteredParks.filter(
+      (park) => park.State == locationSelect
+    );
+  }
+
+  if (typeSelected !== "Show All" && typeSelected !== "Select A Type") {
+    filteredParks = filteredParks.filter((park) =>
+      park.LocationName.includes(typeSelected)
+    );
+  }
+
   // Check if the resulting array is empty
   if (filteredParks.length === 0) {
     displayNoResultsMessage();
@@ -55,14 +56,15 @@ const filterParksByLocationAndType = () => {
 };
 
 const displayNoResultsMessage = () => {
-    const parksContainer = document.querySelector("#content");
-    parksContainer.innerHTML = ""; // Clear previous content
-  
-    const noResultsMessage = document.createElement("p");
-    noResultsMessage.innerText = "Oops there's no nooks of nature in this side of town. Give us another shot by trying a different option!";
-  
-    parksContainer.appendChild(noResultsMessage);
-  };
+  const parksContainer = document.querySelector("#content");
+  parksContainer.innerHTML = ""; // Clear previous content
+
+  const noResultsMessage = document.createElement("p");
+  noResultsMessage.innerText =
+  "Oops! Lost in the wild. 🌿 Try different options. Safe travels! 🗺️";
+
+  parksContainer.appendChild(noResultsMessage);
+};
 
 const displayAllParks = (nationalParksArray) => {
   const parksContainer = document.querySelector("#content");
@@ -71,7 +73,6 @@ const displayAllParks = (nationalParksArray) => {
 
   nationalParksArray.forEach((park) => {
     displayPark(park, parksContainer);
-    
   });
 };
 
@@ -95,7 +96,6 @@ const displayPark = (park, parkDiv) => {
 };
 
 // Functions to add park details
-
 const addParkName = (park, parkDiv) => {
   // Create the park info div
   //   const parkInfoContainer = document.createElement("div");
