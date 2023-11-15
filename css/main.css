@@ -1,6 +1,114 @@
 /* Font family */
-h1, h2, h3, h4, h5, h6 {font-family: 'Rubik Mono One', monospace;
+body {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-size: 1rem;
 }
-main, footer{
-    font-family: 'Kulim Park', sans-serif; 
+
+/* //colors
+$tan: rgba(202, 187, 163, 1.00);
+$orange: rgba(231, 83, 41, 1.00);
+$green: rgba(46, 60, 26, 1.00);
+$yellow: rgba(218, 149, 3, 1.00); 
+
+        rocky: "#743100",
+        lightrocky: "#9B5933",
+        sandRock: "#B0864F",
+        dustBunnyGreen: "#6A775F",
+        grass: "#545700",*/
+
+body {
+  background-color: #fefef8;
 }
+
+/* Navbar */
+/* header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+
+  .nav-container{
+    border: 1px solid firebrick;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-logo{
+    border: 1px salmon solid;
+    width: 300px;
+  }
+  .nav-logo{
+    height: auto;
+  }
+  .nav-middle-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-middle-links a {
+    margin-top: .5rem;
+  }
+  /* Hamburger */
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #2d2b2b;
+    color: #2e323f;
+    transition: opacity 250ms ease;
+    margin-top: 0.6rem;
+    margin-left: 0.5rem;
+    position: absolute;
+    right: 30px;
+    top: 12px;
+  }
+  
+  .nav-toggle:focus,
+  .nav-toggle:hover {
+    opacity: 0.75;
+  }
+  
+  .hamburger {
+    width: 50%;
+    position: relative;
+  }
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    width: 100%;
+  }
+  
+  .hamburger::before {
+    transform: translateY(-6px);
+  }
+  
+  .hamburger::after {
+    transform: translateY(3px);
+  }
+  
+  .nav {
+    /* visibility: hidden; */
+    display: none;
+    height: 0;
+    position: absolute;
+  }
+  
+  .nav--visible {
+    /* visibility: visible; */
+    display: flex;
+    height: auto;
+    position: relative;

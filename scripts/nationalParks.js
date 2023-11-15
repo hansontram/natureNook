@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const populateLocations = () => {
   const locationList = document.getElementById("locationList");
 
-  // trigger function on change
-  // locationList.onchange = locationSelectionChanged
+
 
   for (let location of locationsArray) {
     const option = new Option(location);
