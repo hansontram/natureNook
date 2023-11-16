@@ -1,8 +1,10 @@
 /* Font family */
 body {
-    font-family: 'Lora', serif;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Lora', serif;
   font-size: 1rem;
+  /* TODO: fix responsiveness in big screen */
+  max-width: 1600px;
 }
 
 /* //colors

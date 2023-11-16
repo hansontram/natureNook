@@ -2,4 +2,50 @@
     border: 1px solid teal;
     margin: 8px;
     padding: 8px;
+    border-radius: 10px;
+    background-color: #e2aa60;
 }
+
+main{
+    margin-top: 1rem;
+}
+
+.imageContainer img{
+    width: 60%;
+    max-width: 300px;
+    height: 100%;
+    border-radius: 13px;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+h1{
+    text-align: center;
+    color: #743100;
+ 
+}
+
+select{
+    background-color: #9B5933; ;
+    color:#fefef8;
+    border: 5px solid #fefef8;
+    border-radius: 8px;
+    padding: 5px 25px;
+    transition: all .3s;
+    width: 70%;
+    text-align: center;
+}
+
+.filter-box {
+text-align: center;
+margin-top: 1.5rem;
+/* border: 1px solid #6A775F;
+background-color: #6A775F; */
+  }
+  
+  .filter-box {
+    margin-top: .5rem;
+  }
+
+
+  

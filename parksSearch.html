@@ -20,37 +20,48 @@
     <script src="scripts/nationalParkData.js"></script>
     <script src="scripts/parkTypeData.js"></script>
     <script src="scripts/nationalParks.js"></script>
+    <script src="scripts/index.js"></script>
   </head>
   <body>
     <header>
-      <h1>🏕️ Nature Nook</h1>
-      <div>
-        <a href="./index.html">Home</a>
-        <a href="./parksSearch.html">National Parks</a>
-        <a href="./mountains.html">Mountains</a>
-      </div>
+      <nav class="nav-container">
+        <div class="nav-logo">
+          <!-- <a href="index.html">🏕️ Nature Nook</a> -->
+          <img src="./images/ParkwayLogo.svg" alt="" />
+        </div>
+
+        <div class="nav-middle-links nav">
+          <a href="./index.html" class="links">Home</a>
+          <a href="./parksSearch.html" class="links">National Parks</a>
+          <a href="./mountains.html" class="links">Mountains</a>
+        </div>
+
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
     </header>
     <main>
-      <h3>National Parks Search</h3>
+      <h1>National Parks Search</h1>
+      <div class="imageContainer">
+        <img src="./images/mountainImg.jpg" alt="scenic mountain">
+      </div>
       <div class="filter-box">
-        <div>
+        <div class="selectContainer">
           <select name="locationFilter" id="locationList" class="">
             <option selected disabled>Select A State</option>
             <option>Show All</option>
           </select>
         </div>
-        <div>
+        <div class="selectContainer">
           <select name="parkTypeFilter" id="parkTypeList" class="">
             <option selected disabled>Select A Type</option>
             <option>Show All</option>
           </select>
         </div>
-        
 
-
-
-          <div id="content"></div>
       </div>
+        <div id="content"></div>
     </main>
   </body>
 </html>
