@@ -1,10 +1,18 @@
 /* Font family */
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Lora', serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
+
   font-size: 1rem;
   /* TODO: fix responsiveness in big screen */
   max-width: 1600px;
+}
+h1,
+h2 {
+  font-family: "Bitter", serif;
+  font-weight: bold;
+  
 }
 
 /* //colors
@@ -30,126 +38,137 @@ body {
     width: 100%;
   } */
 
-  .nav-container{
-    border: 1px solid firebrick;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav-logo{
-    border: 1px salmon solid;
-    width: 200px;
-  }
-  .nav-logo{
-    height: auto;
-  }
-  .nav-middle-links{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-  }
-  .nav-middle-links a {
-    margin-top: .5rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: #9B5933;
-  }
+.nav-container {
+  border: 1px solid firebrick;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-logo {
+  /* border: 1px salmon solid; */
+  width: 200px;
+}
+.nav-logo {
+  height: auto;
+}
+.nav-middle-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.nav-middle-links a {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #9b5933;
+}
 
-  /* Hamburger */
+/* Hamburger */
 
 .nav-toggle {
-    cursor: pointer;
-    border: 0;
-    width: 3em;
-    height: 3em;
-    padding: 0em;
-    border-radius: 50%;
-    background: #2d2b2b;
-    color: #2e323f;
-    transition: opacity 250ms ease;
-    margin-top: 0.6rem;
-    margin-left: 0.5rem;
-    position: absolute;
-    right: 30px;
-    top: 5px;
-  }
-  
-  .nav-toggle:focus,
-  .nav-toggle:hover {
-    opacity: 0.75;
-  }
-  
-  .hamburger {
-    width: 50%;
-    position: relative;
-  }
-  .hamburger,
-  .hamburger::before,
-  .hamburger::after {
-    display: block;
-    margin: 0 auto;
-    height: 3px;
-    background: white;
-  }
-  
-  .hamburger::before,
-  .hamburger::after {
-    content: "";
-    width: 100%;
-  }
-  
-  .hamburger::before {
-    transform: translateY(-6px);
-  }
-  
-  .hamburger::after {
-    transform: translateY(3px);
-  }
-  
-  .nav {
-    /* visibility: hidden; */
-    display: none;
-    height: 0;
-    position: absolute;
-  }
-  
-  .nav--visible {
-    /* visibility: visible; */
-    display: flex;
-    height: auto;
-    position: relative;
-  }
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #2d2b2b;
+  color: #2e323f;
+  transition: opacity 250ms ease;
+  margin-top: 0.6rem;
+  margin-left: 0.5rem;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+}
 
-  /* Responsive */
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav {
+  /* visibility: hidden; */
+  display: none;
+  height: 0;
+  position: absolute;
+}
+
+.nav--visible {
+  /* visibility: visible; */
+  display: flex;
+  height: auto;
+  position: relative;
+}
+
+/* Responsive */
 
 @media (min-width: 700px) {
-    /* Navbar */
-    .nav-toggle {
-      display: none;
-    }
-  
-    .nav {
-      visibility: visible;
-      height: auto;
-    }
-    .nav-container {
-      flex-direction: row;
-      justify-content: space-between;
-    padding: 1.3rem;
-    
-    }
-    .nav-middle-links {
-       display: flex;
-       flex-direction: row;
-      position: relative;  
-    }
-    .nav-middle-links a {
-      display: flex;
-      flex-direction: row;
-      
-      margin: 0;
-      margin-left:2rem;
+  /* Navbar */
+  .nav-toggle {
+    display: none;
+  }
 
+  .nav {
+    visibility: visible;
+    height: auto;
+  }
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.3rem;
+  }
+  .nav-middle-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .nav-middle-links a {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    margin-left: 2rem;
+  }
 }
-  
+
+
+/* Home page */
+
+.heroImgContainer{
+   
+    width: 80%;
+}
+.heroImg{
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    border-radius: 10px;
+}

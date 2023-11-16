@@ -92,6 +92,11 @@ const displayPark = (park, parkDiv) => {
   addFax(park, parkContainer);
   //   addLatitude(park,parkContainer);
   //   addLongitude(park,parkContainer);
+  if(park.Visit){
+    addLinkOfPark(park, parkContainer)
+}
+
+
 };
 
 // Functions to add park details
@@ -153,3 +158,14 @@ const addFax = (park, parkDiv) => {
 //     const parkLongitude=document.createElement("p");
 //     parkLongitude.innerText="Longitude: "+park.Longitude;
 //     parkDiv.appendChild(parkLongitude);}
+
+const addLinkOfPark = (park,parkDiv) => {
+  const parkLink = document.createElement("a")
+  parkLink.href = park.Visit;
+
+  parkLink.textContent = "ⓘ";
+  parkLink.target = "_blank"
+  parkDiv.appendChild(parkLink)
+
+  console.log(park.Visit)
+}
