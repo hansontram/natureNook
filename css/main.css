@@ -1,7 +1,7 @@
 /* Font family */
 body {
-  font-family: "Montserrat", sans-serif;
-  /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
 
@@ -11,11 +11,11 @@ $orange: rgba(231, 83, 41, 1.00);
 $green: rgba(46, 60, 26, 1.00);
 $yellow: rgba(218, 149, 3, 1.00); 
 
-        rocky: "#743100",
-        lightrocky: "#9B5933",
-        sandRock: "#B0864F",
-        dustBunnyGreen: "#6A775F",
-        grass: "#545700",*/
+rocky: "#743100",
+lightrocky: "#9B5933",
+sandRock: "#B0864F",
+dustBunnyGreen: "#6A775F",
+grass: "#545700",*/
 
 body {
   background-color: #fefef8;
@@ -36,7 +36,7 @@ body {
   }
   .nav-logo{
     border: 1px salmon solid;
-    width: 300px;
+    width: 200px;
   }
   .nav-logo{
     height: auto;
@@ -45,10 +45,15 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    
   }
   .nav-middle-links a {
     margin-top: .5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #9B5933;
   }
+
   /* Hamburger */
 
 .nav-toggle {
@@ -65,7 +70,7 @@ body {
     margin-left: 0.5rem;
     position: absolute;
     right: 30px;
-    top: 12px;
+    top: 5px;
   }
   
   .nav-toggle:focus,
@@ -112,3 +117,37 @@ body {
     display: flex;
     height: auto;
     position: relative;
+  }
+
+  /* Responsive */
+
+@media (min-width: 700px) {
+    /* Navbar */
+    .nav-toggle {
+      display: none;
+    }
+  
+    .nav {
+      visibility: visible;
+      height: auto;
+    }
+    .nav-container {
+      flex-direction: row;
+      justify-content: space-between;
+    padding: 1.3rem;
+    
+    }
+    .nav-middle-links {
+       display: flex;
+       flex-direction: row;
+      position: relative;  
+    }
+    .nav-middle-links a {
+      display: flex;
+      flex-direction: row;
+      
+      margin: 0;
+      margin-left:2rem;
+
+}
+  
