@@ -6,7 +6,7 @@ body {
 
   font-size: 1rem;
   /* TODO: fix responsiveness in big screen */
-  max-width: 1600px;
+  /* max-width: 1600px; */
 }
 h1,
 h2 {
@@ -28,6 +28,7 @@ grass: "#545700",*/
 
 body {
   background-color: #fefef8;
+
 }
 
 /* Navbar */
@@ -38,13 +39,14 @@ body {
   } */
 
 .nav-container {
-  border: 1px solid firebrick;
+  /* border: 1px solid #e5e7eb; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* box-shadow:  0 1px 1px #2d2b2b; */
 }
 .nav-logo {
-  /* border: 1px salmon solid; */
+ 
   width: 200px;
 }
 .nav-logo {
@@ -129,7 +131,7 @@ body {
 
 
 
-/* Home page */
+/* Hero Section */
 
 .heroText {
   text-align: center;
@@ -137,6 +139,7 @@ body {
 .heroImgContainer {
   width: 100%;
   padding: 0.5rem;
+  height: 450px;
 }
 .heroImg {
   width: 100%;
@@ -145,6 +148,7 @@ body {
   border-radius: 1rem;
 }
 
+/* Icon Section */
 .nationalParksContainer,
 .discoverContainer {
   background-color: #fafafa;
@@ -160,6 +164,7 @@ body {
   font-size: 1rem;
 }
 .exploreBtn {
+    width: fit-content;
   height: fit-content;
   padding: 1rem 3rem;
   border-radius: 1.875rem;
@@ -183,7 +188,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2rem 0;
-  border: 1px #545700 solid;
+  /* border: 1px #545700 solid; */
 }
 
 .iconContainer {
@@ -254,6 +259,25 @@ margin-top: 1.5rem;
 
 
 
+/* Footer */
+footer{
+    background: linear-gradient(#743100,#8e3a24);
+    color: #fafafa;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.footerLogo{
+    width: 200px;
+}
+hr {
+    border: 1px solid #ccc;
+    border-style: none none solid; /* Override default border style */
+    margin: 20px 0;
+    height: 1px;
+    background-color: #ccc;
+  }
+
 
 /* Responsive */
 
@@ -291,9 +315,11 @@ margin-top: 1.5rem;
       margin: 0 auto;
     }
   }
-  body {
+  .wrapper {
     max-width: 1100px;
+    margin: 0 auto;
   }
+ 
 
   @media (min-width: 900px){
     .nationalParksContainer{
