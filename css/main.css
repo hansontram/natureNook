@@ -1,17 +1,21 @@
 /* Font family */
 body {
-  font-family: "Inter", sans-serif;
-  font-family: "Lora", serif;
-  font-family: "Montserrat", sans-serif;
+    /* font-family: 'Lora', serif; */
+    font-family: 'Nunito', sans-serif;
 
   font-size: 1rem;
   /* TODO: fix responsiveness in big screen */
   /* max-width: 1600px; */
 }
-h1,
-h2 {
-  font-family: "Bitter", serif;
-  font-weight: bold;
+.iconParksHeader{
+    color: #fefef8;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.iconParksText{
+    color: #fefef8;
+    font-size: 1.5rem;
+    margin-top: .5rem;
 }
 
 /* //colors
@@ -29,14 +33,11 @@ grass: "#545700",*/
 body {
   background-color: #fefef8;
 
+
 }
 
 /* Navbar */
-/* header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  } */
+
 
 .nav-container {
   /* border: 1px solid #e5e7eb; */
@@ -44,6 +45,8 @@ body {
   flex-direction: column;
   align-items: center;
   /* box-shadow:  0 1px 1px #2d2b2b; */
+  font-size: 1.2rem;
+margin-top: 1rem;
 }
 .nav-logo {
  
@@ -69,18 +72,18 @@ body {
 .nav-toggle {
   cursor: pointer;
   border: 0;
-  width: 3em;
-  height: 3em;
+  width: 2.2em;
+  height: 2.2em;
   padding: 0em;
   border-radius: 50%;
-  background: #2d2b2b;
-  color: #2e323f;
+  background: #e2aa60;
+  color: #fafafa;
   transition: opacity 250ms ease;
   margin-top: 0.6rem;
   margin-left: 0.5rem;
   position: absolute;
-  right: 30px;
-  top: 5px;
+  right: 25px;
+  top: 10px;
 }
 
 .nav-toggle:focus,
@@ -99,6 +102,7 @@ body {
   margin: 0 auto;
   height: 3px;
   background: white;
+  border-radius: 30px;
 }
 
 .hamburger::before,
@@ -129,7 +133,24 @@ body {
   position: relative;
 }
 
-
+/* Header Section */
+h1{
+    /* font-family: 'Lora', serif; */
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #743100;
+  }
+  
+  .heroText{
+      margin: 3rem 0;
+  }
+  .heroPTag{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #743100;
+  margin-top: 1rem;
+  }
 
 /* Hero Section */
 
@@ -138,7 +159,7 @@ body {
 }
 .heroImgContainer {
   width: 100%;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   height: 450px;
 }
 .heroImg {
@@ -148,14 +169,16 @@ body {
   border-radius: 1rem;
 }
 
+
 /* Icon Section */
 .nationalParksContainer,
 .discoverContainer {
   background-color: #fafafa;
   border-radius: 1rem;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 3.5rem 0;
 }
+
 .nationalParksHeader {
   background-color: #6a775f;
   padding: 1rem;
@@ -206,7 +229,9 @@ body {
   border-radius: 8px;
   margin: 0 auto;
 }
-
+.iconContainer p{
+    margin-top: 1rem;
+}
 /* Cards */
 .activityCard {
   border: 2px solid darkmagenta;
@@ -235,6 +260,11 @@ margin-top: 1.5rem;
 .cardContent {
   color: #fafafa;
   padding: 0.7rem 1rem;
+}
+.cardContent h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
 .cardBtn {
   background: #fefef8;
@@ -266,17 +296,13 @@ footer{
  display: flex;
  flex-direction: column;
  align-items: center;
+ padding: 1rem 0rem;
 }
+
 .footerLogo{
     width: 200px;
+    margin-bottom: 1.5rem;
 }
-hr {
-    border: 1px solid #ccc;
-    border-style: none none solid; /* Override default border style */
-    margin: 20px 0;
-    height: 1px;
-    background-color: #ccc;
-  }
 
 
 /* Responsive */
@@ -319,11 +345,15 @@ hr {
     max-width: 1100px;
     margin: 0 auto;
   }
+  .heroImgContainer img{
+    margin: 0 auto;
+  }
  
 
   @media (min-width: 900px){
     .nationalParksContainer{
         display: flex;
+        justify-content: center;
         
     }
     .nationalParksHeader{
