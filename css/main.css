@@ -1,21 +1,21 @@
 /* Font family */
 body {
-    /* font-family: 'Lora', serif; */
-    font-family: 'Nunito', sans-serif;
+  /* font-family: 'Lora', serif; */
+  font-family: "Nunito", sans-serif;
 
   font-size: 1rem;
   /* TODO: fix responsiveness in big screen */
   /* max-width: 1600px; */
 }
-.iconParksHeader{
-    color: #fefef8;
-    font-size: 2rem;
-    font-weight: bolder;
+.iconParksHeader {
+  color: #fefef8;
+  font-size: 2rem;
+  font-weight: bolder;
 }
-.iconParksText{
-    color: #fefef8;
-    font-size: 1.5rem;
-    margin-top: .5rem;
+.iconParksText {
+  color: #fefef8;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 /* //colors
@@ -32,12 +32,9 @@ grass: "#545700",*/
 
 body {
   background-color: #fefef8;
-
-
 }
 
 /* Navbar */
-
 
 .nav-container {
   /* border: 1px solid #e5e7eb; */
@@ -46,10 +43,9 @@ body {
   align-items: center;
   /* box-shadow:  0 1px 1px #2d2b2b; */
   font-size: 1.2rem;
-margin-top: 1rem;
+  margin-top: 1rem;
 }
 .nav-logo {
- 
   width: 200px;
 }
 .nav-logo {
@@ -134,23 +130,23 @@ margin-top: 1rem;
 }
 
 /* Header Section */
-h1{
-    /* font-family: 'Lora', serif; */
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    font-size: 3rem;
-    color: #743100;
-  }
-  
-  .heroText{
-      margin: 3rem 0;
-  }
-  .heroPTag{
+h1 {
+  /* font-family: 'Lora', serif; */
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: #743100;
+}
+
+.heroText {
+  margin: 3rem 0;
+}
+.heroPTag {
   font-size: 1.5rem;
   font-weight: 600;
   color: #743100;
   margin-top: 1rem;
-  }
+}
 
 /* Hero Section */
 
@@ -169,7 +165,6 @@ h1{
   border-radius: 1rem;
 }
 
-
 /* Icon Section */
 .nationalParksContainer,
 .discoverContainer {
@@ -187,7 +182,7 @@ h1{
   font-size: 1rem;
 }
 .exploreBtn {
-    width: fit-content;
+  width: fit-content;
   height: fit-content;
   padding: 1rem 3rem;
   border-radius: 1.875rem;
@@ -220,7 +215,7 @@ h1{
   text-align: center;
   font-size: 0.7rem;
   padding: 0.5rem;
-  margin: .3rem 0;
+  margin: 0.3rem 0;
 }
 .iconContainer img {
   width: 48px;
@@ -229,8 +224,9 @@ h1{
   border-radius: 8px;
   margin: 0 auto;
 }
-.iconContainer p{
-    margin-top: 1rem;
+.iconContainer p {
+  margin-top: 1rem;
+  font-size: .89rem;
 }
 /* Cards */
 .activityCard {
@@ -243,17 +239,15 @@ h1{
   margin: 0 auto;
   /* width: 210px; */
   width: 245px;
-margin-top: 1.5rem;
-
+  margin-top: 1.5rem;
 }
 .cardImgContainer {
   width: 100%;
-
 }
 .cardImg {
   min-height: 100%;
   height: 275px;
-  width: 100%; 
+  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -261,10 +255,10 @@ margin-top: 1.5rem;
   color: #fafafa;
   padding: 0.7rem 1rem;
 }
-.cardContent h4{
-    font-family: 'Playfair Display', serif;
-    font-weight: bolder;
-    font-size: 1.2rem;
+.cardContent h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 .cardBtn {
   background: #fefef8;
@@ -274,113 +268,108 @@ margin-top: 1.5rem;
   padding: 10px;
   margin-top: 0.5rem;
   width: 50%;
-  font-size: .5rem;
+  font-size: 0.5rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-
 }
-
-
-
-
-
-
-
 
 /* Footer */
-footer{
-    background: linear-gradient(#743100,#8e3a24);
-    color: #fafafa;
- display: flex;
- flex-direction: column;
- align-items: center;
- padding: 1rem 0rem;
+footer {
+  background: linear-gradient(#743100, #8e3a24);
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0rem;
+
+}
+footer a{
+  /* text-decoration: none; */
+  color:#fefef8;
 }
 
-.footerLogo{
-    width: 200px;
-    margin-bottom: 1.5rem;
+.footerLogo {
+  width: 200px;
+  margin-bottom: 1.5rem;
 }
-
 
 /* Responsive */
 
 @media (min-width: 700px) {
-    /* Navbar */
-    .nav-toggle {
-      display: none;
-    }
-  
-    .nav {
-      visibility: visible;
-      height: auto;
-    }
-    .nav-container {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 1.3rem;
-    }
-    .nav-middle-links {
-      display: flex;
-      flex-direction: row;
-      position: relative;
-    }
-    .nav-middle-links a {
-      display: flex;
-      flex-direction: row;
-  
-      margin: 0;
-      margin-left: 2rem;
-    }
+  /* Navbar */
+  .nav-toggle {
+    display: none;
   }
 
-  @media (min-width: 700px) {
-    body {
-      margin: 0 auto;
-    }
+  .nav {
+    visibility: visible;
+    height: auto;
   }
-  .wrapper {
-    max-width: 1100px;
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.3rem;
+  }
+  .nav-middle-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .nav-middle-links a {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
     margin: 0 auto;
   }
-  .heroImgContainer img{
-    margin: 0 auto;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.heroImgContainer img {
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .nationalParksContainer {
+    display: flex;
+    justify-content: center;
   }
- 
-
-  @media (min-width: 900px){
-    .nationalParksContainer{
-        display: flex;
-        justify-content: center;
-        
-    }
-    .nationalParksHeader{
-        width:30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       
-    }
-    .iconLinksContainer{
-        width:60%;
-        margin: 0;
-        margin-left: 1rem;
-    }
-/* Discover section */
-
-.discoverContainer{
+  .nationalParksHeader {
+    width: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+  }
+  .iconLinksContainer {
+    width: 60%;
+    margin: 0;
+    margin-left: 1rem;
+  }
+  .iconContainer{
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .iconContainer p{
+    margin-top: 0;
+  }
+  /* Discover section */
+
+  .discoverContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .discoverCardContainer {
+    display: flex;
+  }
 }
-.discoverCardContainer{
-display: flex;
-
-}
-}
-  
-
-
-
-
