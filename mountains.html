@@ -4,39 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🏕️ Mountains</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;700&family=Rubik+Mono+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&family=Playfair+Display:wght@400;500;800&display=swap"
       rel="stylesheet"
     />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/parksSearch.css" />
     <link rel="stylesheet" href="./css/mountain.css" />
     <!-- JS -->
     <script src="scripts/mountainData.js"></script>
     <script src="scripts/mountains.js"></script>
 </head>
 <body>
-    <header>
-        <h1> Nature Nook</h1>
-        <link rel="icon" href="./images/1f3d5.png" type="image/icon type" />
-        <div>
-  
-          <a href="./index.html">Home</a>
-          <a href="./parksSearch.html">National Parks</a>
-          <a href="./mountains.html">Mountains</a>
-        </div>
-      </header>
+  <div class="wrapper">
+  <header>
+    <nav class="nav-container">
+      <div class="nav-logo">
+        <!-- <a href="index.html">🏕️ Nature Nook</a> -->
+        <img src="./images/ParkwayLogo.svg" alt="" />
+      </div>
+
+      <div class="nav-middle-links nav">
+        <a href="./index.html" class="links">Home</a>
+        <a href="./parksSearch.html" class="links">National Parks</a>
+        <a href="./mountains.html" class="links">Mountains</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="open navigation">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </header>
       <main>
-        <h3>Mountains</h3>
-        <div>
-          <select name="mountainList" id="mountainList" class="">
+        <h1>Mountains</h1>
+        <div class="imageContainer">
+          <img src="./images/mountainImg.jpg" alt="scenic mountain" />
+        </div>
+        <div class="filterContainer">
+          <h5 class="filterContent">Select your peak and unveil the wonders of nature! </h5>
+          <select name="mountainList" id="mountainList" class="mountainSelect">
             <option selected disabled>Select Mountain</option>
           </select>
         </div>
+        <hr class="mountainHr">
         <div id="mountainContent"></div>
       </main>
+    </div>
+      <footer>
+        <div class="footerLogoContainer">
+          <img
+            class="footerLogo"
+            src="./images/ParkwayLogo.svg"
+            alt="parkway logo"
+          />
+        </div>
+      
+       
+        <p>
+          Created by
+          <a
+            href="https://github.com/hansontram"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="link text - new window"
+            >Hanson Tram</a
+          >
+        </p>
+    
+    
+    
+        <p>
+          <a
+            href="https://github.com/hansontram/parkway"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="link text - new window"
+            >Project Repo</a
+          >
+        </p>
+    
+      </footer>
 </body>
 </html>

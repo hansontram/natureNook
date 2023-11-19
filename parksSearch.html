@@ -44,12 +44,14 @@
         </button>
       </nav>
     </header>
-    <main>
+    <main class="parkMain">
       <h1>National Parks Search</h1>
       <div class="imageContainer">
-        <img src="./images/mountainImg.jpg" alt="scenic mountain" />
+        <img src="./images/bigMountian.jpg" alt="scenic mountain" />
       </div>
-      <div class="filter-box">
+      <div class="filterContainer">
+        <h5>Get ready to roam the great outdoors!</h5>
+        <div class="filter-box">
         <div class="selectContainer">
           <select name="locationFilter" id="locationList" class="">
             <option selected disabled>Select A State</option>
@@ -63,10 +65,45 @@
           </select>
         </div>
       </div>
-      <hr>
+      </div>
+      <hr class="parkHr">
       <div id="content"></div>
       
     </main>
   </div>
+  <footer>
+    <div class="footerLogoContainer">
+      <img
+        class="footerLogo"
+        src="./images/ParkwayLogo.svg"
+        alt="parkway logo"
+      />
+    </div>
+  
+   
+    <p>
+      Created by
+      <a
+        href="https://github.com/hansontram"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="link text - new window"
+        >Hanson Tram</a
+      >
+    </p>
+
+
+
+    <p>
+      <a
+        href="https://github.com/hansontram/parkway"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="link text - new window"
+        >Project Repo</a
+      >
+    </p>
+
+  </footer>
   </body>
 </html>

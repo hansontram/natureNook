@@ -36,6 +36,7 @@ const displayMountainDetails = (mountain) => {
 
 const addMountainName = (mountain, detailsContainer) => {
   const nameOfMountain = document.createElement("h3");
+  nameOfMountain.classList.add("mountainName");
   nameOfMountain.innerText = `Mountain Name: ${mountain.name}`;
   detailsContainer.appendChild(nameOfMountain);
 };

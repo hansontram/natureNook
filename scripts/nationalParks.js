@@ -59,8 +59,9 @@ const displayNoResultsMessage = () => {
   parksContainer.innerHTML = ""; // Clear previous content
 
   const noResultsMessage = document.createElement("p");
+  noResultsMessage.classList.add("noResultsText");
   noResultsMessage.innerText =
-  "Oops! Lost in the wild. 🌿 Try different options. Safe travels! 🗺️";
+  "Oops! You're lost in the wild. 🌿 \n Try different options.";
 
   parksContainer.appendChild(noResultsMessage);
 };
@@ -84,14 +85,15 @@ const displayPark = (park, parkDiv) => {
 
   // call functions to add details
   addParkName(park, parkContainer);
+
   addParkAddress(park, parkContainer);
   addCity(park, parkContainer);
   addState(park, parkContainer);
   addZipCode(park, parkContainer);
   addPhone(park, parkContainer);
   addFax(park, parkContainer);
-  //   addLatitude(park,parkContainer);
-  //   addLongitude(park,parkContainer);
+    addLatitude(park,parkContainer);
+    addLongitude(park,parkContainer);
   if(park.Visit){
     addLinkOfPark(park, parkContainer)
 }
@@ -148,22 +150,23 @@ const addFax = (park, parkDiv) => {
   parkDiv.appendChild(faxOfPark);
 };
 
-// function addLatitude(park,parkDiv){
-//     const parkLatitude=document.createElement("p");
-//     parkLatitude.innerText="Latitude: "+park.Latitude;
-//     parkDiv.appendChild(parkLatitude);
-// }
+function addLatitude(park,parkDiv){
+    const parkLatitude=document.createElement("p");
+    parkLatitude.innerText="Latitude: "+park.Latitude;
+    parkDiv.appendChild(parkLatitude);
+}
 
-// function addLongitude(park,parkDiv){
-//     const parkLongitude=document.createElement("p");
-//     parkLongitude.innerText="Longitude: "+park.Longitude;
-//     parkDiv.appendChild(parkLongitude);}
+function addLongitude(park,parkDiv){
+    const parkLongitude=document.createElement("p");
+    parkLongitude.innerText="Longitude: "+park.Longitude;
+    parkDiv.appendChild(parkLongitude);}
 
 const addLinkOfPark = (park,parkDiv) => {
   const parkLink = document.createElement("a")
+  parkLink.classList.add("linkOfPark");
   parkLink.href = park.Visit;
 
-  parkLink.textContent = "ⓘ";
+  parkLink.textContent = "🔗 More info";
   parkLink.target = "_blank"
   parkDiv.appendChild(parkLink)
 
