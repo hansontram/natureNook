@@ -26,6 +26,8 @@ Parkway website pages include:
         <p>Users have the ability to select an option of their desired mountain from a user-friendly dropdown box, revealing detailed information about the chosen mountain.</p>
 </details>
 
+### Technologies:
+   - This website was built with HTML, CSS, Javascript
 
 #### Run Locally:
 
@@ -42,10 +44,8 @@ git clone : https://github.com/hansontram/ecom-website.git
 
 - Then open index.html in your browser or run live server extension to view the website
 
-### Built With
-   - HTML, CSS, Javascript
 
-### Lessons learned
+### Lessons learned:
    - Dynamically populate dropdown content through javascript
    - Learn JavaScript event handling, especially the `change` event for dropdowns.
    - Dynamically render components using DOM manipulation with JavaScript for creating, modifying, and removing elements.
