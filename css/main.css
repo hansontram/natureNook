@@ -61,6 +61,11 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #9b5933;
+  transition: color 0.3s ease;
+}
+
+.links:hover {
+  color: #e2aa60; 
 }
 
 /* Hamburger */
