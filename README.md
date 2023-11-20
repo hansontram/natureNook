@@ -3,7 +3,7 @@
 
 Parkway is a website designed and created as a capstone project, it's a dedicated platform where enthusiasts, deeply connected to nature's wonders, curate a wealth of information about national parks and majestic mountains. 
 
-#### 🔗 Live site: [ Parkway](makiapparel.netlify.app)
+#### 🔗 Live site: [ Parkway](https://nationalparkway.netlify.app/)
 <img src="./images/mainHome.png"  />
 
 ### Features:
