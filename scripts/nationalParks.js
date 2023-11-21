@@ -103,9 +103,6 @@ const displayPark = (park, parkDiv) => {
 
 // Functions to add park details
 const addParkName = (park, parkDiv) => {
-  // Create the park info div
-  //   const parkInfoContainer = document.createElement("div");
-  //   parkDiv.appendChild(parkInfoContainer);
 
   // Add park name
   const parkHeader = document.createElement("h4");

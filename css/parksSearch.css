@@ -12,9 +12,7 @@ main {
 }
 
 .imageContainer img {
-  /* width: 60%; */
-  /* width: 100%; */
-  /* max-width: 300px; */
+
   height: 100%;
   border-radius: 13px;
   margin: 0 auto;
@@ -31,10 +29,8 @@ h1 {
     width: 100%;
 }
 select {
-  /* background-color: #e2aa60; */
-  /* background-color: #6A775F; */
+
   color: #545700;
-  /* color: #fefef8; */
   border: 5px solid #fefef8;
   border-radius: 18px;
   padding: 5px 25px;
@@ -48,10 +44,7 @@ select {
 .filterContainer{
   text-align: center;
   margin-top: 1.5rem;
-  /* display: flex;
-  justify-content: center; */
   margin-top: 0.5rem;
-  /* border: 1px solid #6A775F; */
   background-color: #6A775F;
   color: #fefef8;
   border-radius: 1rem;
@@ -87,13 +80,6 @@ select {
 
 .parkContainer {
   border: 0.5px solid #e5e7eb;
-/* color: #743100; */
-  /* margin: 8px;
-    padding: 8px;
-    border-radius: 10px; */
-
-  /* background-color: #e2aa60;  */
-  /* background-color: #6A775F;  */
   background-color: rgba(249, 250, 251);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
   padding: 24px; /* Adjust padding as needed */
