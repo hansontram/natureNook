@@ -25,6 +25,11 @@ Parkway website pages include:
    <img src="./images/mountainsPage.png"  />
         <p>Users have the ability to select an option of their desired mountain from a user-friendly dropdown box, revealing detailed information about the chosen mountain.</p>
 </details>
+<details>
+  <summary>Mockup</summary>
+   <img src="./images/plan.png"  />
+        <p>This project was carefully thought out and designed with a wireframe to ensure efficient project planning and coding execution.</p>
+</details>
 
 ### Technologies:
    - This website was built with HTML, CSS, Javascript
